@@ -3,12 +3,9 @@ Mega Project List
 
 A list of practical projects that anyone can solve in any programming language (See [solutions](https://github.com/thekarangoel/Projects-Solutions)). These projects are divided in multiple categories, and each category has it's own folder.
 
-To get started, simply fork this repo.
-
-## [CONTRIBUTING](https://github.com/thekarangoel/Projects/blob/master/CONTRIBUTING.md)
-
-See ways of [contributing](https://github.com/thekarangoel/Projects/blob/master/CONTRIBUTING.md) to this repo. You can contribute **solutions** (will be published in this [repo](https://github.com/thekarangoel/Projects-Solutions)) to existing problems, **add new projects** or remove existing ones. Make sure you follow all instructions properly.
-
+## N07070
+  
+I will try to solve all these problemes in python, to learn python fully. I hope to complete by 2015-10-19 GMT+1.
 
 ## [Solutions](https://github.com/thekarangoel/Projects-Solutions)
 
@@ -21,6 +18,16 @@ If *Projects* has helped you in any way, and you'd like to help the developer, p
 **- Gittip: [https://www.gittip.com/karan/](https://www.gittip.com/karan/)**
 
 **- Flattr: [https://flattr.com/profile/thekarangoel](https://flattr.com/profile/thekarangoel)**
+
+## Formatting
+
+* Resolved: 
+
+~~Solved~~
+
+* Working on it:
+
+*Working on it*
 
 ================================
 

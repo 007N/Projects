@@ -72,6 +72,7 @@ Numbers
 
 **Coin Flip Simulation** - Write some code that simulates flipping a single coin however many times the user decides. The code should record the outcomes and count the number of tails and heads.
 
+~~**Is This Year Bissextille ?** - Enter a year in the YYYY format, and it will tell you if the year is bissextile.~~
 
 Classic Algorithms
 -----------------

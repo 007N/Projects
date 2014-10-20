@@ -4,7 +4,7 @@ Mega Project List
 A list of practical projects that anyone can solve in any programming language (See [solutions](https://github.com/thekarangoel/Projects-Solutions)). These projects are divided in multiple categories, and each category has it's own folder.
 
 ## N07070
-  
+
 I will try to solve all these problemes in python, to learn python fully. I hope to complete by 2015-10-19 GMT+1.
 
 ## [Solutions](https://github.com/thekarangoel/Projects-Solutions)
@@ -21,7 +21,7 @@ If *Projects* has helped you in any way, and you'd like to help the developer, p
 
 ## Formatting
 
-* Resolved: 
+* Resolved:
 
 ~~Solved~~
 
@@ -34,7 +34,7 @@ If *Projects* has helped you in any way, and you'd like to help the developer, p
 Numbers
 ---------
 
-**Find PI to the Nth Digit** - Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
+~~**Find PI to the Nth Digit** - Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.~~
 
 **Fibonacci Sequence** - Enter a number and have the program generate the Fibonacci sequence to that number or to the Nth number.
 

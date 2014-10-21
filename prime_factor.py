@@ -24,8 +24,4 @@ for x in range(3, int(input / 2) + 1):
 		if is_prime(x) == True:
 	 			factors.append(x)
 
-if factors > 1:
-    print("This number is not Prime.\n")
-else:
-    print("This number is Fucking Prime !\n")
 print factors

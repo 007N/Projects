@@ -49,7 +49,8 @@ def parse_url(url):
         # Use bs4 to get the web page and extract all the links.
         html_web_page = urllib2.urlopen(url).read()
         soup = BeautifulSoup(html_web_page)
-        # Need to find all the links that point to a link in the type like http://xxxx/
+        # Need to find all the links that point to a link in the type like
+        # http://xxxx/
         for link in soup.find_all("a"):
             if link in link_list:
                 print("That link is already registered, passing...")
@@ -89,7 +90,7 @@ def create_graph():
     pass
 
 
-def main(url,step,limit):
+def main(url, step, limit):
     link_list.append(url)
     """for each in enumerate(link_list):
         nbr_links += 1
@@ -100,4 +101,4 @@ def main(url,step,limit):
             step += 1
 
 if __name__ == '__main__':
-    main(first_url,generation_step,generation_limit)
+    main(first_url, generation_step, generation_limit)

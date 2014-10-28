@@ -12,15 +12,18 @@ Done - A way to stop the generation, or a way to generate by step the link.
     - Inspired by https://github.com/grimley517/Projects/blob/graph1/Graphs/GfmLinks.py
 """
 
-from bs4 import BeautifulSoup
+from bs4 import *
 import urllib2
+import time
+import re
 
 
-
+link_list = []
 first_url = str(
-    input("Please enter the link from which you want to start. >> "))
+    raw_input("Please enter the link from which you want to start. >> "))
 generation_limit = int(input("How many links would you like to follow ? >> "))
 generation_step = 0
+nbr_links = 0
 
 
 def checkNode(node, graph):
@@ -31,14 +34,30 @@ def checkNode(node, graph):
         return (False)
 
 
-def parse_url(url, limit):
-    while generation_step < generation_limit:
+def parse_url(url):
+    try:
+        url_request = urllib2.urlopen(url)
+    except urllib2.HTTPError as e:
+        if hasattr(e, 'reason'):
+            print 'We failed to reach a server.'
+            print 'Reason: ', e.reason
+        elif hasattr(e, 'code'):
+            print 'The server couldn\'t fulfill the request.'
+            print 'Error code: ', e.code
+    else:
+        print 'URL is good! Following up...'
+        # Use bs4 to get the web page and extract all the links.
         html_web_page = urllib2.urlopen(url).read()
         soup = BeautifulSoup(html_web_page)
-        for link in soup.find_all('a'):
-            print(link.get('href'))
-        find all the links,
-        add all the links from the page to the root url list[("http://example.com", "http://example.fr"), ("http://example.com", "http://example.ch"), ("http://example.com", "http://example.us"), ("http://example.com", "http://example.tk")]
+        # Need to find all the links that point to a link in the type like http://xxxx/
+        for link in soup.find_all("a"):
+            if link in link_list:
+                print("That link is already registered, passing...")
+                time.sleep(0.5)
+            else:
+                link_list.append(link.get('href'))
+                print(link_list)
+                time.sleep(0.5)
 
 
 def fromLinks(links):
@@ -53,7 +72,7 @@ def fromLinks(links):
     # Set up an empty dictionary
     graph = {}
     # Iterate thru the input nodes
-    for link in links:
+    for link in link_list:
         # Check if each node is in the graph, if it isnt add it.
         for node in link:
             if not checkNode(node, graph):
@@ -67,3 +86,18 @@ def fromLinks(links):
 def create_graph():
     # Take the graph created, with it, do a png image to map the graph of
     # links.
+    pass
+
+
+def main(url,step,limit):
+    link_list.append(url)
+    """for each in enumerate(link_list):
+        nbr_links += 1
+    """
+    while step < limit:
+        for each_url in link_list:
+            parse_url(each_url)
+            step += 1
+
+if __name__ == '__main__':
+    main(first_url,generation_step,generation_limit)

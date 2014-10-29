@@ -56,7 +56,9 @@ def parse_url(url):
                 print("That link is already registered, passing...")
                 time.sleep(0.5)
             else:
-                link_list.append(link.get('href'))
+                links_to_be_added = link.get('href')
+                links_filtered = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', links_to_be_added)
+                link_list.append(links_filtered)
                 print(link_list)
                 time.sleep(0.5)
 

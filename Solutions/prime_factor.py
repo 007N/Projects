@@ -1,8 +1,11 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+# Check if the number is prime.
+
 """Prime Factorization - Have the user
 enter a number and find all Prime Factors
 (if there are any) and display them."""
-
-# Check if the number is prime.
 
 
 def is_prime(n):
@@ -14,13 +17,17 @@ def is_prime(n):
             return False
     return True
 
-input = int(raw_input("Enter a number >> "))
+
+input = int(raw_input('Enter a number >> '))
 factors = [1]
+
 # Two is always prime, so treat it on the side.
+
 if input % 2 == 0:
     factors.append(2)
 
 # Check numbers from 3 and check if it's a interger.
+
 for x in range(3, int(input / 2) + 1):
     if input % x == 0:
         if is_prime(x) == True:

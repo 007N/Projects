@@ -74,6 +74,8 @@ Numbers
 
 ~~**Is This Year Bissextille ?** - Enter a year in the YYYY format, and it will tell you if the year is bissextile.~~
 
+~~**The Pipe Probleme** - Give a number of pipes, and get the number of pipes needed at the base to form a pyramid of pipes.~~
+
 Classic Algorithms
 -----------------
 

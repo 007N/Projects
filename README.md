@@ -76,6 +76,8 @@ Numbers
 
 ~~**The Pipe Probleme** - Give a number of pipes, and get the number of pipes needed at the base to form a pyramid of pipes.~~
 
+~~**The Social Network Relations** - John has two friends on day one. Every day, his friends present him two new friend. How many friends will he have in x days ?~~
+
 Classic Algorithms
 -----------------
 

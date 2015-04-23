@@ -30,8 +30,10 @@ class user_menu(object):
 '''
 
     def choice(self):
-        user_choice = \
-            int(raw_input('Please choose a options, 1 or 2. >>'))
+        user_choice = 0
+        while user_choice != 1 and user_choice != 2:
+            user_choice = \
+                int(raw_input('Please choose an option, 1 or 2. >> '))
         return user_choice
 
     def user_number_input(self, choice):
@@ -39,13 +41,13 @@ class user_menu(object):
             if choice == 1:
                 binary_numbers = []
                 user_binary = \
-                    raw_input('Please enter your binary number. >>')
+                    raw_input('Please enter your binary number. >> ')
                 for number in user_binary:
                     binary_numbers.append(int(number))
                 return binary_numbers
             elif choice == 2:
                 user_decimal = \
-                    int(raw_input('Please enter your decimal number. >>'
+                    int(raw_input('Please enter your decimal number. >> '
                         ))
                 return user_decimal
 
@@ -84,7 +86,8 @@ def main():
     if user_choice == 1:
         print conversion.converter_to_decimal(user_number)
     elif user_choice == 2:
-        print conversion.converter_to_binary(user_number)
+        print ''.join(map(str,
+                      conversion.converter_to_binary(user_number)))
 
 
 if __name__ == '__main__':

@@ -6,6 +6,7 @@ A list of practical projects that anyone can solve in any programming language (
 ## N07070
 
 I will try to solve all these problemes in python, to learn python fully. I hope to complete by 2015-10-19 GMT+1.
+Today is 2015-04-22, I'm starting again. 
 
 ## [Solutions](https://github.com/thekarangoel/Projects-Solutions)
 
@@ -13,7 +14,7 @@ You can find implementations of these projects in many other languages by other 
 
 ## Donations
 
-If *Projects* has helped you in any way, and you'd like to help the developer, please consider donating.
+If *Projects* has helped you in any way, and you'd like to help the original developer, please consider donating.
 
 **- Gittip: [https://www.gittip.com/karan/](https://www.gittip.com/karan/)**
 
@@ -46,6 +47,7 @@ Numbers
 
 ~~**Mortgage Calculator** - Calculate the monthly payments of a fixed term mortgage over given Nth terms at a given interest rate. Also figure out how long it will take the user to pay back the loan.~~
 
+*Note: this exercice will never be resolved by me, because it uses a old and deprecated way of using money. Money is now counted with decimals in modern countries*  
 **Change Return Program** - The user enters a cost and then the amount of money given. The program will figure out the change and the number of quarters, dimes, nickels, pennies needed for the change.
 
 **Binary to Decimal and Back Converter** - Develop a converter to convert a decimal number to binary or a binary number to its decimal equivalent.

@@ -9,13 +9,6 @@ import time
 import re
 
 link_list = []
-first_url = \
-    str(raw_input('Please enter the link from which you want to start. >> '
-        ))
-generation_limit = \
-    int(input('How many links would you like to follow ? >> '))
-generation_step = 0
-nbr_links = 0
 
 
 def checkNode(node, graph):
@@ -51,16 +44,13 @@ def parse_url(url):
         for link in soup.find_all('a'):
             if link in link_list:
                 print 'That link is already registered, passing...'
-                time.sleep(0.5)
             else:
                 links_to_be_added = link.get('href')
                 links_filtered = \
                     re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
                                , links_to_be_added)
                 link_list.append(links_filtered)
-                print link_list
-                time.sleep(0.5)
-
+                return link_list
 
 def fromLinks(links):
     '''
@@ -78,7 +68,7 @@ def fromLinks(links):
 
     # Iterate thru the input nodes
 
-    for link in link_list:
+    for link in links:
 
         # Check if each node is in the graph, if it isnt add it.
 
@@ -102,6 +92,7 @@ def create_graph():
 
 
 def main(url, step, limit):
+    
     link_list.append(url)
     while step < limit:
         for each_url in link_list:
@@ -110,4 +101,11 @@ def main(url, step, limit):
 
 
 if __name__ == '__main__':
+    first_url = \
+    str(raw_input('Please enter the link from which you want to start. >> '
+        ))
+    generation_limit = \
+    int(input('How many links would you like to follow ? >> '))
+    generation_step = 0
+    nbr_links = 0
     main(first_url, generation_step, generation_limit)

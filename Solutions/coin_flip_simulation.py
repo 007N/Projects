@@ -5,7 +5,6 @@
 
 import random
 
-coin_flip = random.randint(0, 1)
 nbr_user_flips = \
     int(input('Please enter the number of times you want the coin to flip. >> '
         ))
@@ -15,11 +14,11 @@ nbr_heads = 0
 
 while nbr_flips_total < nbr_user_flips:
     if random.randint(0, 1) == 1:
-        print '\nThis coin gave tails.'
+        # print '\nThis coin gave tails.'
         nbr_tails += 1
         nbr_flips_total += 1
     elif random.randint(0, 1) == 0:
-        print '\nThis coin gave heads.'
+        # print '\nThis coin gave head. ;)'
         nbr_heads += 1
         nbr_flips_total += 1
 

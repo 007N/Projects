@@ -144,12 +144,12 @@ def main():
     if user_choice == 1:
         user_text = raw_input('Please enter the text to encrypt. >> ')
         user_key = raw_input('Please enter the key for encryption. >> ')
-        print i.encrypt(user_text.lower(), user_key.lower())
+        print ">> ",''.join(map(str,i.encrypt(user_text.lower(), user_key.lower())))
     elif user_choice == 2:
         user_text = raw_input('Please enter the text to decrypt. >> ')
         user_key = \
             raw_input('Pleas enter the key used for encryption. >> ')
-        print i.decrypt(user_text, user_key)
+        print ">> ",''.join(map(str,i.decrypt(user_text.lower(), user_key.lower())))
 
 
 if __name__ == '__main__':

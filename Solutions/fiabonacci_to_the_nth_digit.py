@@ -7,8 +7,6 @@
 have the program generate the Fibonacci
 sequence to that number or to the Nth number."""
 
-import math
-
 # Ask until where the Fibonacci suit should go
 
 precision = \

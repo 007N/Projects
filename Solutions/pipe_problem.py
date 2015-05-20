@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+# This programme does not work. It needs to be fixed.
 
 def get_pipe_number():
     nbr_pipes = \
@@ -27,7 +28,6 @@ def find_base(pipes):
 def main():
     i = get_pipe_number()
     find_base(i)
-
 
 if __name__ == '__main__':
     main()

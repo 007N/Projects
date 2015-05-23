@@ -6,7 +6,7 @@ A list of practical projects that anyone can solve in any programming language (
 ## N07070
 
 I will try to solve all these problemes in python, to learn python fully. I hope to complete by 2015-10-19 GMT+1.
-Today is 2015-04-22, I'm starting again. 
+Today is 2015-04-22, I'm starting again.
 
 ## [Solutions](https://github.com/thekarangoel/Projects-Solutions)
 
@@ -151,7 +151,7 @@ Networking
 
 **Whois Search Tool** - Enter an IP or host address and have it look it up through whois and return the results to you.
 
-**Site Checker with Time Scheduling** - An application that attempts to connect to a website or server every so many minutes or a given time and check if it is up. If it is down, it will notify you by email or by posting a notice on screen.
+~~**Site Checker with Time Scheduling** - An application that attempts to connect to a website or server every so many minutes or a given time and check if it is up. If it is down, it will notify you by email or by posting a notice on screen.~~
 
 
 Classes

@@ -105,7 +105,9 @@ class crypto(object):
     def decrypt(self, text, key):
         text = list(text)
         key = list(key)
-        result = []
+        result = []#!/usr/bin/python
+# -*- coding: utf-8 -*-
+#
         position_of_key = 0
         for letter in text:
 
